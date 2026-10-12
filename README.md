@@ -1,79 +1,64 @@
 # Web-Tech-4
 
 
+# Assignment 4. Forms and Validation
 
-TASK 0
+Name: Duiset Nurzhigit  
+Group: IT-2501
 
-<img width="708" height="626" alt="Снимок экрана 2026-10-12 в 10 15 24" src="https://github.com/user-attachments/assets/2bdc07e0-b366-4af4-9761-cd2ef36b502b" />
+## Task 0. Contact Form
 
+I created a contact form with Name, Email, Message and a Submit button.
+Each field has a label.
 
+![Task 0](https://github.com/user-attachments/assets/2bdc07e0-b366-4af4-9761-cd2ef36b502b)
 
+## Task 1. HTML5 Validation
 
+I added required fields and text length limits.
+The browser checks empty fields and the email format.
 
-TASK 1
+![Task 1 — Screenshot 1](https://github.com/user-attachments/assets/3c9873e3-b29e-430b-865c-5a29c9eeac24)
 
+![Task 1 — Screenshot 2](https://github.com/user-attachments/assets/47f881ee-b7ec-45a3-b526-19fc56046348)
 
-<img width="367" height="109" alt="Снимок экрана 2026-10-12 в 10 14 38" src="https://github.com/user-attachments/assets/3c9873e3-b29e-430b-865c-5a29c9eeac24" />
+## Task 2. Bootstrap Form
 
+I styled the contact form using Bootstrap.
+Name and Email appear side by side on wider screens.
+On mobile, the fields stack vertically.
+I also added placeholders and helper text.
 
+![Task 2 — Screenshot 1](https://github.com/user-attachments/assets/9075048c-12de-4f7f-8990-8d87aeecc4aa)
 
-<img width="640" height="608" alt="Снимок экрана 2026-10-12 в 10 05 22" src="https://github.com/user-attachments/assets/47f881ee-b7ec-45a3-b526-19fc56046348" />
+![Task 2 — Screenshot 2](https://github.com/user-attachments/assets/8311cd8c-a3c1-4ff3-a6a7-7f2d9e6a8ea5)
 
+## Task 3. Bootstrap Validation
 
+I used is-valid and is-invalid to show validation results.
+A JavaScript function changes the classes when the user enters data.
+Feedback messages appear below the fields.
 
+![Task 3 — Screenshot 1](https://github.com/user-attachments/assets/ae679767-da8c-4d17-b626-60b9e0afc5e5)
 
+![Task 3 — Screenshot 2](https://github.com/user-attachments/assets/aff26e9e-4699-48e5-b6e3-17f3c271ba87)
 
+## Task 4. Registration Form
 
+I created a registration form with first name, last name, email,
+password, confirm password, gender, hobbies and country.
 
-TASK 2
+I used Bootstrap Grid for the responsive layout.
+Passwords must contain at least 8 characters.
+JavaScript checks that the passwords match.
+The Reset button clears the fields and validation styles.
 
+![Task 4 — Screenshot 1](https://github.com/user-attachments/assets/90187478-14ec-421b-addb-5ef16c517f36)
 
+![Task 4 — Screenshot 2](https://github.com/user-attachments/assets/f95b65b7-41e4-49e0-9b9a-8431786618c7)
 
+## Summary
 
-
-
-
-
-<img width="1444" height="348" alt="Снимок экрана 2026-10-12 в 10 32 12" src="https://github.com/user-attachments/assets/9075048c-12de-4f7f-8990-8d87aeecc4aa" />
-<img width="665" height="739" alt="Снимок экрана 2026-10-12 в 10 32 05" src="https://github.com/user-attachments/assets/8311cd8c-a3c1-4ff3-a6a7-7f2d9e6a8ea5" />
-
-
-
-
-
-
-TASK 3
-
-
-
-
-
-
-
-
-
-
-
-
-<img width="1124" height="834" alt="Снимок экрана 2026-10-12 в 10 42 35" src="https://github.com/user-attachments/assets/ae679767-da8c-4d17-b626-60b9e0afc5e5" />
-<img width="1408" height="286" alt="Снимок экрана 2026-10-12 в 10 41 41" src="https://github.com/user-attachments/assets/aff26e9e-4699-48e5-b6e3-17f3c271ba87" />
-
-
-
-
-
-
-
-
-
-
-TASK 4
-
-
-
-
-
-
-<img width="1099" height="821" alt="Снимок экрана 2026-10-12 в 10 54 24" src="https://github.com/user-attachments/assets/90187478-14ec-421b-addb-5ef16c517f36" />
-<img width="1387" height="668" alt="Снимок экрана 2026-10-12 в 10 54 40" src="https://github.com/user-attachments/assets/f95b65b7-41e4-49e0-9b9a-8431786618c7" />
-
+I started with a basic HTML form, added browser validation,
+and then styled it with Bootstrap. Finally, I added validation
+feedback and a registration form.
