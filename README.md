@@ -35,10 +35,10 @@ I also added placeholders and helper text.
 
 ## Task 3. Bootstrap Validation
 
-I used is-valid and is-invalid to show validation results.
-A JavaScript function changes the classes when the user enters data.
-Feedback messages appear below the fields.
-
+I used the Bootstrap validation script provided by the instructor.
+When Submit is clicked, the script checks the form and blocks
+submission if there are invalid fields.
+The was-validated class shows validation styles and feedback messages.
 
 <img width="741" height="729" alt="Снимок экрана 2026-10-14 в 16 23 14" src="https://github.com/user-attachments/assets/26702f94-9c84-4dc2-89cc-c9d7e052baf6" />
 
@@ -50,9 +50,9 @@ I created a registration form with first name, last name, email,
 password, confirm password, gender, hobbies and country.
 
 I used Bootstrap Grid for the responsive layout.
-Passwords must contain at least 8 characters.
-JavaScript checks that the passwords match.
-The Reset button clears the fields and validation styles.
+Both password fields require at least 8 characters.
+The form uses the same Bootstrap validation script as Task 3.
+The Reset button resets the field values.
 
  <img width="1066" height="798" alt="Снимок экрана 2026-10-14 в 16 20 38" src="https://github.com/user-attachments/assets/50807cfb-49f7-45f3-9fc4-16f32050c391" />
 
