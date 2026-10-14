@@ -14,7 +14,7 @@
     <div class="container">
         <h1>Task 3</h1>
 
-        <form>
+        <form class = "needs-validation" novalidate>
             <div class="row">
 
                 <div class="col-12 col-md-6 mb-3">
@@ -24,8 +24,7 @@
                            class="form-control"
                            placeholder="Enter your name"
                            required maxlength="50"
-                           oninput="validateField(this)"
-                           oninvalid="validateField(this)">
+                           >
 
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Name is required.</div>
@@ -38,8 +37,7 @@
                            class="form-control"
                            placeholder="name@example.com"
                            required
-                           oninput="validateField(this)"
-                           oninvalid="validateField(this)">
+                           >
 
                     <div class="form-text">
                         Enter a valid email address.
@@ -57,8 +55,7 @@
                               class="form-control"
                               placeholder="Write your message"
                               required minlength="1" maxlength="200"
-                              oninput="validateField(this)"
-                              oninvalid="validateField(this)"></textarea>
+                              ></textarea>
 
                     <div class="form-text">
                         Use 1 to 200 characters.
@@ -78,15 +75,23 @@
     </div>
 
     <script>
-        function validateField(field) {
-            if (field.validity.valid) {
-                field.classList.remove("is-invalid");
-                field.classList.add("is-valid");
-            } else {
-                field.classList.remove("is-valid");
-                field.classList.add("is-invalid");
-            }
-        }
+    (() => {
+  'use strict'
+
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
     </script>
 
 </body>
