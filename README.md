@@ -39,7 +39,8 @@ I used is-valid and is-invalid to show validation results.
 A JavaScript function changes the classes when the user enters data.
 Feedback messages appear below the fields.
 
-![Task 3 — Screenshot 1](https://github.com/user-attachments/assets/ae679767-da8c-4d17-b626-60b9e0afc5e5)
+
+<img width="741" height="729" alt="Снимок экрана 2026-10-14 в 16 23 14" src="https://github.com/user-attachments/assets/26702f94-9c84-4dc2-89cc-c9d7e052baf6" />
 
 ![Task 3 — Screenshot 2](https://github.com/user-attachments/assets/aff26e9e-4699-48e5-b6e3-17f3c271ba87)
 
@@ -53,7 +54,7 @@ Passwords must contain at least 8 characters.
 JavaScript checks that the passwords match.
 The Reset button clears the fields and validation styles.
 
-![Task 4 — Screenshot 1] <img width="1066" height="798" alt="Снимок экрана 2026-10-14 в 16 20 38" src="https://github.com/user-attachments/assets/50807cfb-49f7-45f3-9fc4-16f32050c391" />
+ <img width="1066" height="798" alt="Снимок экрана 2026-10-14 в 16 20 38" src="https://github.com/user-attachments/assets/50807cfb-49f7-45f3-9fc4-16f32050c391" />
 
 
 ![Task 4 — Screenshot 2](https://github.com/user-attachments/assets/f95b65b7-41e4-49e0-9b9a-8431786618c7)
