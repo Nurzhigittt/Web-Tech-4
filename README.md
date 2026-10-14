@@ -53,7 +53,8 @@ Passwords must contain at least 8 characters.
 JavaScript checks that the passwords match.
 The Reset button clears the fields and validation styles.
 
-![Task 4 — Screenshot 1](https://github.com/user-attachments/assets/90187478-14ec-421b-addb-5ef16c517f36)
+![Task 4 — Screenshot 1] <img width="1066" height="798" alt="Снимок экрана 2026-10-14 в 16 20 38" src="https://github.com/user-attachments/assets/50807cfb-49f7-45f3-9fc4-16f32050c391" />
+
 
 ![Task 4 — Screenshot 2](https://github.com/user-attachments/assets/f95b65b7-41e4-49e0-9b9a-8431786618c7)
 
