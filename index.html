@@ -13,15 +13,14 @@
 
         <h1>Task 4. Registration Form</h1>
 
-<form onreset="resetRegistration(this)">
+<form class="needs-validation" novalidate>
     <div class="row">
 
         <div class="col-12 col-md-6 mb-3">
             <label for="firstName" class="form-label">First Name:</label>
             <input type="text" id="firstName" name="firstName"
                    class="form-control" required maxlength="50"
-                   oninput="validateField(this)"
-                   oninvalid="validateField(this)">
+                   >
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">First name is required.</div>
         </div>
@@ -30,8 +29,7 @@
             <label for="lastName" class="form-label">Last Name:</label>
             <input type="text" id="lastName" name="lastName"
                    class="form-control" required maxlength="50"
-                   oninput="validateField(this)"
-                   oninvalid="validateField(this)">
+                   >
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Last name is required.</div>
         </div>
@@ -40,8 +38,7 @@
             <label for="regEmail" class="form-label">Email:</label>
             <input type="email" id="regEmail" name="email"
                    class="form-control" required
-                   oninput="validateField(this)"
-                   oninvalid="validateField(this)">
+                   >
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Enter a valid email address.</div>
         </div>
@@ -50,8 +47,7 @@
             <label for="password" class="form-label">Password:</label>
             <input type="password" id="password" name="password"
                    class="form-control" required minlength="8"
-                   oninput="validateField(this); checkPasswords()"
-                   oninvalid="validateField(this)">
+                   >
             <div class="form-text">At least 8 characters.</div>
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">
@@ -66,9 +62,8 @@
             <input type="password" id="confirmPassword"
                    name="confirmPassword"
                    class="form-control" required minlength="8"
-                   oninput="checkPasswords()"
-                   oninvalid="validateField(this)">
-            <div class="valid-feedback">Passwords match!</div>
+                   >
+            <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">
                 Repeat the password exactly, using at least 8 characters.
             </div>
@@ -114,8 +109,7 @@
             <label for="country" class="form-label">Country:</label>
             <select id="country" name="country"
                     class="form-select" required
-                    onchange="validateField(this)"
-                    oninvalid="validateField(this)">
+                    >
                 <option value="">Choose a country</option>
                 <option value="KZ">Kazakhstan</option>
                 <option value="UZ">Uzbekistan</option>
@@ -133,37 +127,23 @@
     </div>
 
 <script>
-    function validateField(field) {
-        if (field.validity.valid) {
-            field.classList.remove("is-invalid");
-            field.classList.add("is-valid");
-        } else {
-            field.classList.remove("is-valid");
-            field.classList.add("is-invalid");
-        }
-    }
-    function checkPasswords() {
-    const password = document.getElementById("password");
-    const confirm = document.getElementById("confirmPassword");
+(() => {
+  'use strict'
 
-    if (password.value === confirm.value) {
-        confirm.setCustomValidity("");
-    } else {
-        confirm.setCustomValidity("Passwords do not match.");
-    }
+  
+  const forms = document.querySelectorAll('.needs-validation')
 
-    validateField(confirm);
-}
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
-    function resetRegistration(form) {
-    const fields = form.querySelectorAll("input, select");
-
-    for (const field of fields) {
-        field.classList.remove("is-valid");
-        field.classList.remove("is-invalid");
-        field.setCustomValidity("");
-    }
-}
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
 </script>
 
 </body>          
